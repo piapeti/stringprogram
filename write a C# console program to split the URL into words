@@ -1,0 +1,34 @@
+ Console.WriteLine (var);
+        char[] arr={'.','/'};
+        for(int c=0;c<=arr.Length-1;c++){
+        string[] str1=var.Split(arr[c]);
+         Console.WriteLine (arr[c]);
+          var = var.Replace(arr[c], ' ');
+       // for(int i=0;i<=str1.Length-1;i++){
+           // if(str1[i].Contains("/")){
+               //string[] str2=str1[i].ToString().Spilt("//");
+             //    Console.WriteLine (str1[i]);
+               //  string[] str2=str1[i].Split("/");
+                
+            //}
+            //else{
+       Console.WriteLine (var);
+            //}
+            
+        //}
+        
+    }
+        
+    }
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+}
