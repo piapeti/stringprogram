@@ -1,0 +1,27 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Linq;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       
+string str="hello";
+Console.WriteLine(str);
+        string[] arr = str.Select(c => c.ToString()).ToArray();
+
+for(int i=0;i<=arr.Length-1;i++)
+{int cnt=1;
+for(int j=0;j<=arr.Length-1;j++)
+{
+if(i!=j)
+if(arr[i]== arr[j])
+{
+cnt++;
+}}
+Console.WriteLine(arr[i] + "is came "+cnt +"times");
+}
+    }
+}
