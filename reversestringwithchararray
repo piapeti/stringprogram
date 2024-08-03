@@ -1,0 +1,29 @@
+// See https://aka.ms/new-console-template for more information
+// Console.WriteLine("Hello, World!");
+using System.Diagnostics.Tracing;
+using static System.Net.Mime.MediaTypeNames;
+
+string str = "priya";
+char[] cArray = str.ToCharArray();
+Console.WriteLine(str);
+ 
+Console.WriteLine("cArray"+cArray.Length);
+string var = str;
+string var1 = "";
+try
+{
+    for (int i = cArray.Length-1  ; i >=0; i--)
+    {
+        var1 = var1 + cArray[i];
+    }
+    Console.WriteLine(var1);
+
+    var1 = "";
+    for (int i = var.Length - 1; i >= 0; i--)
+    {
+        var1 = var1 + var[i];
+    }
+    Console.WriteLine(var1);
+}
+catch (Exception ex) { throw; }
+Console.ReadLine();
