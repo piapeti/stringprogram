@@ -1,0 +1,36 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        
+        int[] i={1,2,3,4,5};
+       // Console.WriteLine ("Try programiz.pro");
+        
+    // Console.WriteLine (i.Length);
+    for(int j=i.Length-1;j>=0;j--){
+     Console.WriteLine (i[j]);
+    }
+    
+    int temp=0;
+    int shighval=0;
+      for(int j=i.Length-1;j>=0;j--){
+          if(i[j]>temp)
+          {
+              temp=i[j];
+              
+          }
+          else if(i[j]<temp && i[j]>shighval)
+          {
+              shighval=i[j];
+              
+          }
+          
+      }
+      Console.WriteLine (shighval);
+    }
+}
