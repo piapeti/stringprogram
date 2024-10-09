@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+		  string strp="madam";
+		 // Console.WriteLine(strp[strp.Length-1]);
+		  bool itspal=false;
+		  for(int i=0;i<strp.Length;i++)
+		  {
+		     if(strp[i]==strp[strp.Length-i-1]){
+		       
+		       itspal=true;
+		     }else
+		     {itspal=false;}
+		     // Console.WriteLine(strp[i]);
+		      
+		      
+		    
+		    
+		  }
+			Console.WriteLine(itspal);
+		}
+	}
+}
